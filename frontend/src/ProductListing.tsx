@@ -22,7 +22,7 @@ const ProductListing: React.FC = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('http://internship-case-dice.onrender.com/api/products');
+      const response = await fetch('https://internship-case-dice.onrender.com/api/products');
       if (!response.ok) throw new Error('Failed to fetch products');
       const data: Product[] = await response.json();
 
